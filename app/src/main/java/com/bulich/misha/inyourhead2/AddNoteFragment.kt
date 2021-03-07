@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.bulich.misha.inyourhead2.model.Note
 
-
+//Фрагмент добавления новой заметки
 class AddNoteFragment : Fragment() {
 
     private lateinit var titleEditText: EditText
