@@ -20,6 +20,7 @@ class NoteListFragment : Fragment() {
     interface CallAddFragment{
         fun onAddNoteFragment()
     }
+
     private var callAddFragment: CallAddFragment? = null
     private var callbacks: Callbacks? = null
     private lateinit var recyclerView: RecyclerView
@@ -88,7 +89,6 @@ class NoteListFragment : Fragment() {
                 true}
             else -> return super.onOptionsItemSelected(item)
         }
-
     }
 
     private inner class NoteHolder(view: View) : RecyclerView.ViewHolder(view), View.OnClickListener{
@@ -107,7 +107,6 @@ class NoteListFragment : Fragment() {
         override fun onClick(p0: View?) {
             callbacks?.onNoteSelected(note.title)
         }
-
     }
 
     private inner class NoteAdapter(var noteList: List<Note>) : RecyclerView.Adapter<NoteHolder>(){
@@ -126,6 +125,5 @@ class NoteListFragment : Fragment() {
         override fun getItemCount(): Int {
             return noteList.size
         }
-
     }
 }

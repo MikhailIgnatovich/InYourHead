@@ -13,6 +13,7 @@ class NoteDetailsViewModel : ViewModel() {
     var noteLiveData: LiveData<Note> = Transformations.switchMap(noteTitleLiveData) {
         noteRepository.getNote(it)
     }
+
     fun getNote(title: String){
         noteTitleLiveData.value = title
     }

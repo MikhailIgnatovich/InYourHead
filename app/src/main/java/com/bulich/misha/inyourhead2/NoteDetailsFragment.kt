@@ -18,6 +18,7 @@ class NoteDetailsFragment : Fragment() {
     interface CallBack1{
         fun onCallBack()
     }
+
     private var callBack: CallBack1? = null
     private lateinit var titleDetailEditText: EditText
     private lateinit var descriptionDetailsEditText: EditText
