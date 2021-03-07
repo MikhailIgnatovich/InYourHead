@@ -2,7 +2,7 @@ package com.bulich.misha.inyourhead2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-//Привет
+
 class MainActivity : AppCompatActivity(), NoteListFragment.Callbacks,
     NoteListFragment.CallAddFragment, NoteDetailsFragment.CallBack1{
     override fun onCreate(savedInstanceState: Bundle?) {
