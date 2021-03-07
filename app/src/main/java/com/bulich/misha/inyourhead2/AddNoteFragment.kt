@@ -22,7 +22,6 @@ class AddNoteFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
 
     override fun onCreateView(
@@ -45,7 +44,6 @@ class AddNoteFragment : Fragment() {
         addButton.setOnClickListener {
             addNoteToDB()
         }
-
     }
 
     private fun addNoteToDB(){
@@ -60,5 +58,4 @@ class AddNoteFragment : Fragment() {
             return AddNoteFragment()
         }
     }
-
 }
